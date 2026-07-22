@@ -61,7 +61,9 @@ I build AI-powered applications, automation systems, and modern web experiences 
 
 ## Featured Projects
 
-### 🌊 Wave3
+### 🌊 Wave3 https://wave3collectiveph.com
+https://github.com/jhon-hub-work/wave3
+wave3-portfolio.netlify.app
 
 A premium apparel e-commerce platform built from scratch.
 
@@ -79,7 +81,7 @@ Node.js • HTML • CSS • JavaScript • Turso
 
 ---
 
-### 🪨 Obsidian Browser
+### 🪨 Obsidian Browser https://github.com/jhon-hub-work/ObsidianBrowser
 
 A premium Chromium-inspired browser focused on productivity, AI integration, and minimal design.
 

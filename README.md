@@ -115,11 +115,11 @@ Current Work
 
 Portfolio
 
-https://jhonmbuerano.net
+https://jhonmbuerano.netlify.app
 
 LinkedIn
 
-(Add link)
+www.linkedin.com/in/jhon-mycho-buerano
 
 Email
 

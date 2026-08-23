@@ -45,7 +45,8 @@ Most of what I build is **operated by real people, in production, without a deve
 
 I don't use AI to autocomplete lines — I use it as a build system. Agent loops, custom skills, MCP
 servers, and rendering pipelines that run unattended. This is the real usage behind the projects
-below.
+below — the card is regenerated from my local Claude Code transcripts by
+[`scripts/build_stats.py`](scripts/build_stats.py) and pushed automatically, so it is never stale.
 
 <p align="center">
   <img src="assets/claude-code-stats.svg" alt="Claude Code usage: 216 sessions, 50,658 messages, 56.1M tokens, 47 active days, 15-day streak, Opus 5" width="100%"/>

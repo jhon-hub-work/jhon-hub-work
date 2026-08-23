@@ -41,6 +41,18 @@ Most of what I build is **operated by real people, in production, without a deve
 
 ---
 
+## Claude Code, In Practice
+
+I don't use AI to autocomplete lines — I use it as a build system. Agent loops, custom skills, MCP
+servers, and rendering pipelines that run unattended. This is the real usage behind the projects
+below.
+
+<p align="center">
+  <img src="assets/claude-code-stats.svg" alt="Claude Code usage: 216 sessions, 50,658 messages, 56.1M tokens, 47 active days, 15-day streak, Opus 5" width="100%"/>
+</p>
+
+---
+
 ## Featured Projects
 
 ### Wave3 Collective PH — Production E-Commerce Platform & Custom CMS
@@ -74,7 +86,29 @@ flowchart LR
   <img src="https://img.shields.io/badge/Render-1a1a1a?style=flat-square&logo=render&logoColor=white" alt="Render"/>
 </p>
 
-**[Live site](https://wave3collectiveph.com)** · **[Case study](https://wave3-portfolio.netlify.app)** · **[Repository](https://github.com/jhon-hub-work/wave3)**
+**[Live site](https://wave3collectiveph.com)** · **[Case study](https://wave3-portfolio.netlify.app)** · **[Repository (private)](https://github.com/jhon-hub-work/wave3)**
+
+<table>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/Hero-section.jpg" alt="Wave3 storefront hero"/></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/Store-page.jpg" alt="Wave3 store page"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/admin-dashboard.jpg" alt="Wave3 admin CMS dashboard"/></td>
+    <td><img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/inventory.jpg" alt="Wave3 inventory management"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/Payment-Verification.jpg" alt="Wave3 manual payment verification queue"/></td>
+    <td><img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/Order-confirmation.jpg" alt="Wave3 order confirmation"/></td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/Mobile-home.jpg" alt="Wave3 mobile home" width="30%"/>
+  <img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/Mobile-store.jpg" alt="Wave3 mobile store" width="30%"/>
+  <img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/Mobile-cart.jpg" alt="Wave3 mobile cart" width="30%"/>
+</p>
+
 
 ---
 
@@ -112,6 +146,18 @@ flowchart TD
 
 **[Repository](https://github.com/jhon-hub-work/ObsidianBrowser)** · [Architecture](https://github.com/jhon-hub-work/ObsidianBrowser/blob/main/ARCHITECTURE.md) · [Roadmap](https://github.com/jhon-hub-work/ObsidianBrowser/blob/main/ROADMAP.md)
 
+<table>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/jhon-hub-work/ObsidianBrowser/main/docs/screenshots/home.png" alt="Obsidian Browser home"/></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/jhon-hub-work/ObsidianBrowser/main/docs/screenshots/tabs.png" alt="Obsidian Browser workspace tabs"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/jhon-hub-work/ObsidianBrowser/main/docs/screenshots/command-palette.png" alt="Obsidian Browser command palette"/></td>
+    <td><img src="https://raw.githubusercontent.com/jhon-hub-work/ObsidianBrowser/main/docs/screenshots/private-window.png" alt="Obsidian Browser private window"/></td>
+  </tr>
+</table>
+
+
 ---
 
 ### Portfolio — Conversion-First Engineering Site
@@ -128,6 +174,25 @@ understand the work in under two minutes.
 </p>
 
 **[Live site](https://jhonmbuerano.netlify.app)**
+
+---
+
+
+## All Public Repositories
+
+| Repository | What it is | Stack |
+|---|---|---|
+| **[ObsidianBrowser](https://github.com/jhon-hub-work/ObsidianBrowser)** | Workspace-first Chromium browser for builders. Local-first, per-workspace session isolation, network-level ad blocking. | Electron · Chromium · Node.js |
+| **[portfolio](https://github.com/jhon-hub-work/portfolio)** · [live](https://jhonmbuerano.netlify.app) | Conversion-first portfolio and long-form Wave3 engineering case study. No framework, no build step, no dependencies. | HTML · CSS · Vanilla JS · Netlify |
+| **[jhon-hub-work](https://github.com/jhon-hub-work/jhon-hub-work)** | This profile README. | Markdown |
+
+**Private:** `wave3` — production e-commerce platform and custom CMS, live and operated daily by a
+non-technical owner. Source is closed; the [case study](https://jhonmbuerano.netlify.app) and the
+screenshots above cover the architecture and the decisions.
+
+**Also working in:** [hyperframes](https://github.com/jhon-hub-work/hyperframes) (HTML-to-video
+rendering for agents) and [barehands](https://github.com/jhon-hub-work/barehands) (webcam hand
+tracking as an AI interface) — forks I build on top of, not original work.
 
 ---
 

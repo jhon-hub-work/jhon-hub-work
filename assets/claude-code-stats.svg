@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="382" viewBox="0 0 880 382" role="img" aria-label="Claude Code usage: 657 sessions, 101826 messages, 70.1M tokens, 63 active days, 10 day current streak, top model Opus 5">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="382" viewBox="0 0 880 382" role="img" aria-label="Claude Code usage: 657 sessions, 101838 messages, 70.1M tokens, 63 active days, 10 day current streak, top model Opus 5">
   <style>
     .bg   { fill:#161b22; stroke:#30363d; stroke-width:1; }
     .tile { fill:#1c2128; stroke:#30363d; stroke-width:1; }
@@ -22,7 +22,7 @@
     <text class="val" x="42" y="120">657</text>
     <rect class="tile" x="236.5" y="62.5" width="196" height="76" rx="8"/>
     <text class="lbl" x="254" y="88">Messages</text>
-    <text class="val" x="254" y="120">101,826</text>
+    <text class="val" x="254" y="120">101,838</text>
     <rect class="tile" x="448.5" y="62.5" width="196" height="76" rx="8"/>
     <text class="lbl" x="466" y="88">Tokens (in + out)</text>
     <text class="val" x="466" y="120">70.1M</text>
@@ -158,8 +158,8 @@
     <rect x="264" y="346" width="13" height="13" rx="3" fill="#26a641"><title>2026-09-06 &#8212; 5534 messages</title></rect>
     <rect x="280" y="250" width="13" height="13" rx="3" fill="#006d32"><title>2026-09-07 &#8212; 4612 messages</title></rect>
     <rect x="280" y="266" width="13" height="13" rx="3" fill="#26a641"><title>2026-09-08 &#8212; 6873 messages</title></rect>
-    <rect x="280" y="282" width="13" height="13" rx="3" fill="#006d32"><title>2026-09-09 &#8212; 3868 messages</title></rect>
+    <rect x="280" y="282" width="13" height="13" rx="3" fill="#006d32"><title>2026-09-09 &#8212; 3880 messages</title></rect>
   </g>
 
-  <text class="sub" x="24" y="366">Last 17 weeks of activity &#183; regenerated from local transcripts &#183; updated 09 Sep 2026, 18:41</text>
+  <text class="sub" x="24" y="366">Last 17 weeks of activity &#183; regenerated from local transcripts &#183; updated 09 Sep 2026, 19:03</text>
 </svg>

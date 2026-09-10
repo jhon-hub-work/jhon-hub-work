@@ -191,8 +191,14 @@ def render():
     return len(sessions), messages, tokens, len(per_day), current, top_model
 
 
+# Launched by a SessionEnd hook under pythonw.exe, which has no console; a plain
+# subprocess.run then allocates a visible one per git call and steals focus.
+NO_WINDOW = getattr(subprocess, "CREATE_NO_WINDOW", 0)
+
+
 def git(*args):
-    return subprocess.run(("git",) + args, cwd=REPO, capture_output=True, text=True)
+    return subprocess.run(("git",) + args, cwd=REPO, capture_output=True, text=True,
+                          creationflags=NO_WINDOW)
 
 
 def push():

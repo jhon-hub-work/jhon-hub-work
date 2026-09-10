@@ -56,60 +56,76 @@ below — the card is regenerated from my local Claude Code transcripts by
 
 ## Featured Projects
 
-### Wave3 Collective PH — Production E-Commerce Platform & Custom CMS
+### Salo — A Digital Disposable Camera for Philippine Events
 
-A full storefront and admin CMS built from scratch for a real Philippine streetwear brand. No
-Shopify, no WordPress, no templates. **Shipped to production and sold out its first product batch.**
-The owner runs the entire business through the CMS daily, with no developer involved.
+<p align="center">
+  <a href="https://saloph.com"><img src="assets/salo/hero.jpg" alt="Salo homepage: Sixty more angles of the same day" width="100%"/></a>
+</p>
 
-**Why it exists:** the business sells through GCash and bank transfer with a hand-verified payment
-screenshot — a workflow hosted checkouts aren't built around. Wave3 makes it first-class: reserve
-stock → upload proof → verify → approve, with a payment window that auto-expires unpaid orders and
-restocks them.
+Guests scan the QR card on their table, get a fixed handful of shots, and shoot the night from
+where they are sitting. No app to download, no account, no retakes, no preview screen. Every
+photo lands in one album that stays sealed until the host opens it. Built for weddings, debuts,
+birthdays, christenings and reunions, with Taglish copy and GCash-first payments.
 
-**One decision worth reading:** all media lives *in the database*, not on disk or S3. The free
-hosting tier's filesystem doesn't survive redeploys. Object storage is the textbook answer at
-scale — at this scale it would have added a paid dependency for no gain. The deployment constraint
-drove the architecture, not the other way around.
+**Why it exists:** the official photographer sees one angle. Everyone else in the room is already
+holding a different one, and those photos end up scattered across fifty camera rolls. Limiting
+each guest to a few shots is the point, not a missing feature. When every frame counts, people stop
+posing and start noticing the room.
+
+**One decision worth reading:** *payment creates the event, not the browser.* The QR only exists
+once PayMongo's webhook says the money arrived. The signature is checked against the raw request
+body before anything runs, and anything unrecognised is refused. I tested it by attacking it:
+unsigned, garbage-signed and wrong-secret webhooks get 401, a retried webhook is recognised and
+not processed twice, and paying ₱1 for a ₱2,499 package gets 409. A redirect back from a checkout
+page proves nothing, so the product never trusts one.
+
+**Proven on real phones, not asserted.** A Galaxy S25 FE on Chrome and an iPhone on Safari both
+ran the whole guest flow against a live event. iOS Safari gave a real in-browser viewfinder, which
+was the biggest risk in the "no guest app" decision. With Wi-Fi off, four photos queued and all
+arrived. A whole guest session used about 340 KB. The guest page loads in 0.93 s cold in
+production.
 
 ```mermaid
 flowchart LR
-    C["Customer UI<br/>storefront"] -->|public API| API
-    A["Admin CMS<br/>cookie-authed"] -->|admin API| API
-    API["Node.js + Express<br/>REST API"] --> DB[("Turso<br/>distributed SQLite")]
+    G["Guest phone<br/>scan QR · browser camera"] -->|shots, offline queue| API
+    H["Host<br/>magic-link sign-in"] -->|reveal · download all| API
+    P["PayMongo"] -->|signed webhook| API
+    API["Next.js route handlers<br/>on Vercel"] --> DB[("Supabase<br/>Postgres")]
+    API --> R2[("Cloudflare R2<br/>sealed photos")]
 ```
 
 <p>
-  <img src="https://img.shields.io/badge/Node.js-1a1a1a?style=flat-square&logo=node.js&logoColor=8CC84B" alt="Node.js"/>
-  <img src="https://img.shields.io/badge/Express-1a1a1a?style=flat-square&logo=express&logoColor=white" alt="Express"/>
-  <img src="https://img.shields.io/badge/Vanilla_JS-1a1a1a?style=flat-square&logo=javascript&logoColor=F7DF1E" alt="Vanilla JS"/>
-  <img src="https://img.shields.io/badge/Turso_SQLite-1a1a1a?style=flat-square&logo=sqlite&logoColor=003B57" alt="Turso"/>
-  <img src="https://img.shields.io/badge/Render-1a1a1a?style=flat-square&logo=render&logoColor=white" alt="Render"/>
+  <img src="https://img.shields.io/badge/Next.js_15-1a1a1a?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/React_19-1a1a1a?style=flat-square&logo=react&logoColor=61DAFB" alt="React"/>
+  <img src="https://img.shields.io/badge/TypeScript-1a1a1a?style=flat-square&logo=typescript&logoColor=3178C6" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/Supabase-1a1a1a?style=flat-square&logo=supabase&logoColor=3FCF8E" alt="Supabase"/>
+  <img src="https://img.shields.io/badge/Cloudflare_R2-1a1a1a?style=flat-square&logo=cloudflare&logoColor=F38020" alt="Cloudflare R2"/>
+  <img src="https://img.shields.io/badge/PayMongo-1a1a1a?style=flat-square" alt="PayMongo"/>
+  <img src="https://img.shields.io/badge/Vercel-1a1a1a?style=flat-square&logo=vercel&logoColor=white" alt="Vercel"/>
+  <img src="https://img.shields.io/badge/status-beta_·_free_test_events-555555?style=flat-square" alt="Status"/>
 </p>
 
-**[Live site](https://wave3collectiveph.com)** · **[Case study](https://wave3-portfolio.netlify.app)** · **[Repository (private)](https://github.com/jhon-hub-work/wave3)**
+**[Live site](https://saloph.com)** · **[Repository (private)](https://github.com/jhon-hub-work/salo)**
 
 <table>
   <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/Hero-section.jpg" alt="Wave3 storefront hero"/></td>
-    <td width="50%"><img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/Store-page.jpg" alt="Wave3 store page"/></td>
+    <td width="50%"><img src="assets/salo/guest-flow.jpg" alt="Salo: what a guest actually sees, five screens"/></td>
+    <td width="50%"><img src="assets/salo/photo-wall.jpg" alt="Salo: sixty angles arriving at one album"/></td>
   </tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/admin-dashboard.jpg" alt="Wave3 admin CMS dashboard"/></td>
-    <td><img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/inventory.jpg" alt="Wave3 inventory management"/></td>
-  </tr>
-  <tr>
-    <td><img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/Payment-Verification.jpg" alt="Wave3 manual payment verification queue"/></td>
-    <td><img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/Order-confirmation.jpg" alt="Wave3 order confirmation"/></td>
+    <td colspan="2"><img src="assets/salo/tiers.jpg" alt="Salo event sizes: Libre, Handaan, Kasalan, Grand, Custom"/></td>
   </tr>
 </table>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/Mobile-home.jpg" alt="Wave3 mobile home" width="30%"/>
-  <img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/Mobile-store.jpg" alt="Wave3 mobile store" width="30%"/>
-  <img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/Mobile-cart.jpg" alt="Wave3 mobile cart" width="30%"/>
+  <img src="assets/salo/mobile-hero.jpg" alt="Salo homepage on a phone" width="30%"/>
+  <img src="assets/salo/mobile-guest.jpg" alt="Salo guest camera screen on a phone" width="30%"/>
+  <img src="assets/salo/mobile-host.jpg" alt="Salo host sign-in on a phone" width="30%"/>
 </p>
 
+Also shipped: a host Android app (a verified Trusted Web Activity), a founder console with staff
+accounts and an append-only audit log, and a ledger. The console sits behind a secret path and
+answers 404 to anyone who isn't signed in.
 
 ---
 
@@ -161,6 +177,33 @@ flowchart TD
 
 ---
 
+### Wave3 Collective PH — E-Commerce Platform & Custom CMS
+
+A storefront and admin CMS built from scratch for a Philippine streetwear brand. No Shopify, no
+WordPress, no templates. It went live and sold out its first batch, and the owner runs the
+business through it without a developer. It makes the GCash and bank-transfer checkout
+first-class: stock is reserved, the buyer uploads a payment screenshot, and an admin verifies it.
+Unpaid orders expire and go back on the shelf. All media lives in the database, because the free
+hosting tier wipes its disk on every redeploy.
+
+<p>
+  <img src="https://img.shields.io/badge/Node.js-1a1a1a?style=flat-square&logo=node.js&logoColor=8CC84B" alt="Node.js"/>
+  <img src="https://img.shields.io/badge/Express-1a1a1a?style=flat-square&logo=express&logoColor=white" alt="Express"/>
+  <img src="https://img.shields.io/badge/Turso_SQLite-1a1a1a?style=flat-square&logo=sqlite&logoColor=003B57" alt="Turso"/>
+  <img src="https://img.shields.io/badge/Render-1a1a1a?style=flat-square&logo=render&logoColor=white" alt="Render"/>
+</p>
+
+**[Live site](https://wave3collectiveph.com)** · **[Case study](https://wave3-portfolio.netlify.app)** · **[Repository (private)](https://github.com/jhon-hub-work/wave3)**
+
+<table>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/Hero-section.jpg" alt="Wave3 storefront hero"/></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/jhon-hub-work/portfolio/main/admin-dashboard.jpg" alt="Wave3 admin CMS dashboard"/></td>
+  </tr>
+</table>
+
+---
+
 ### Portfolio — Conversion-First Engineering Site
 
 A hand-built portfolio and long-form case study site. Zero framework, zero build step — the same
@@ -187,9 +230,9 @@ understand the work in under two minutes.
 | **[portfolio](https://github.com/jhon-hub-work/portfolio)** · [live](https://jhonmbuerano.netlify.app) | Conversion-first portfolio and long-form Wave3 engineering case study. No framework, no build step, no dependencies. | HTML · CSS · Vanilla JS · Netlify |
 | **[jhon-hub-work](https://github.com/jhon-hub-work/jhon-hub-work)** | This profile README. | Markdown |
 
-**Private:** `wave3` — production e-commerce platform and custom CMS, live and operated daily by a
-non-technical owner. Source is closed; the [case study](https://jhonmbuerano.netlify.app) and the
-screenshots above cover the architecture and the decisions.
+**Private:** `salo` (event photo app, live at [saloph.com](https://saloph.com), in beta) and
+`wave3` (e-commerce platform and CMS, operated daily by a non-technical owner). The source is
+closed; the sections and screenshots above cover the architecture and the decisions.
 
 **Also working in:** [hyperframes](https://github.com/jhon-hub-work/hyperframes) (HTML-to-video
 rendering for agents) and [barehands](https://github.com/jhon-hub-work/barehands) (webcam hand
@@ -205,9 +248,10 @@ a non-technical operator — instead of designing for imaginary scale and paying
 **Fewer moving parts.** Wave3 runs on two runtime dependencies. Every dependency, framework, and
 service has to earn its place against the cost of operating it solo.
 
-**Correctness where it counts.** The most valuable engineering in Wave3 wasn't a screen — it was
-guaranteeing two simultaneous buyers can never purchase the same last unit. That's transactional,
-tested, and boring on purpose.
+**Correctness where it counts.** The most valuable engineering in Salo isn't a screen. It's making
+sure an event only exists once a signed payment proves it, and that a forged or repeated
+payment message changes nothing. In Wave3 it was making sure two buyers can never both get the
+last unit. Both are tested and boring on purpose.
 
 **Documentation is part of the deliverable.** If a system can't be understood from its README, it
 isn't finished.

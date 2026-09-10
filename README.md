@@ -33,7 +33,7 @@ Most of what I build is **operated by real people, in production, without a deve
 | Area | What I'm doing with it |
 |---|---|
 | **AI Agents** | Agent loops, tool design, and orchestration for real workflows — not demos |
-| **Claude Code / Anthropic API** | Agentic development workflows, MCP servers, skill and tool authoring |
+| **Claude Code / Anthropic API** | Agentic development workflows, agent loops, and automated rendering pipelines |
 | **Browser Engineering** | Chromium/Electron internals — session isolation, lifecycle, process management |
 | **Full Stack Development** | Node.js services, REST design, SQLite/Turso, zero-build frontends |
 | **AI Automation** | Turning manual business operations into self-healing automated systems |
@@ -43,8 +43,8 @@ Most of what I build is **operated by real people, in production, without a deve
 
 ## Claude Code, In Practice
 
-I don't use AI to autocomplete lines — I use it as a build system. Agent loops, custom skills, MCP
-servers, and rendering pipelines that run unattended. This is the real usage behind the projects
+I don't use AI to autocomplete lines — I use it as a build system. Agent loops and rendering pipelines
+that run unattended. This is the real usage behind the projects
 below — the card is regenerated from my local Claude Code transcripts by
 [`scripts/build_stats.py`](scripts/build_stats.py) and pushed automatically, so it is never stale.
 
@@ -222,7 +222,7 @@ isn't finished.
 | **Frontend** | React · vanilla JS architecture · responsive CSS · zero-build delivery |
 | **Backend** | Express · REST API design · SQLite · Turso (libSQL) · PostgreSQL · session auth |
 | **Desktop** | Electron · Chromium session & process model · IPC / preload isolation |
-| **AI** | Claude Code · Anthropic API · OpenAI · Gemini · MCP servers · agent & tool design |
+| **AI** | Claude Code · Anthropic API · OpenAI · Gemini · Ollama · n8n · agent workflow design |
 | **Automation** | n8n · Make · Zapier · workflow design |
 | **Infra** | Render · Netlify · Docker · environment-driven config · custom domains + SSL |
 

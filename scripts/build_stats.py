@@ -210,6 +210,12 @@ def push():
             "commit", "-m", "chore: refresh Claude Code usage card")
     if r.returncode:
         return "commit failed: " + (r.stderr or r.stdout).strip()
+    # A README edit made on github.com left this clone behind, and every push after
+    # it was rejected for two weeks without anyone seeing. Catch up first.
+    r = git("pull", "--rebase", "--autostash", "origin", "main")
+    if r.returncode:
+        git("rebase", "--abort")
+        return "pull failed: " + r.stderr.strip()
     r = git("push", "origin", "HEAD")
     return "pushed" if r.returncode == 0 else "push failed: " + r.stderr.strip()
 

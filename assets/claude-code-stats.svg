@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="382" viewBox="0 0 880 382" role="img" aria-label="Claude Code usage: 708 sessions, 111703 messages, 75.4M tokens, 67 active days, 14 day current streak, top model Opus 5">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="382" viewBox="0 0 880 382" role="img" aria-label="Claude Code usage: 709 sessions, 111717 messages, 75.4M tokens, 67 active days, 14 day current streak, top model Opus 5">
   <style>
     .bg   { fill:#161b22; stroke:#30363d; stroke-width:1; }
     .tile { fill:#1c2128; stroke:#30363d; stroke-width:1; }
@@ -19,10 +19,10 @@
   <g>
     <rect class="tile" x="24.5" y="62.5" width="196" height="76" rx="8"/>
     <text class="lbl" x="42" y="88">Sessions</text>
-    <text class="val" x="42" y="120">708</text>
+    <text class="val" x="42" y="120">709</text>
     <rect class="tile" x="236.5" y="62.5" width="196" height="76" rx="8"/>
     <text class="lbl" x="254" y="88">Messages</text>
-    <text class="val" x="254" y="120">111,703</text>
+    <text class="val" x="254" y="120">111,717</text>
     <rect class="tile" x="448.5" y="62.5" width="196" height="76" rx="8"/>
     <text class="lbl" x="466" y="88">Tokens (in + out)</text>
     <text class="val" x="466" y="120">75.4M</text>
@@ -162,8 +162,8 @@
     <rect x="280" y="298" width="13" height="13" rx="3" fill="#006d32"><title>2026-09-10 &#8212; 2806 messages</title></rect>
     <rect x="280" y="314" width="13" height="13" rx="3" fill="#0e4429"><title>2026-09-11 &#8212; 1557 messages</title></rect>
     <rect x="280" y="330" width="13" height="13" rx="3" fill="#0e4429"><title>2026-09-12 &#8212; 1873 messages</title></rect>
-    <rect x="280" y="346" width="13" height="13" rx="3" fill="#0e4429"><title>2026-09-13 &#8212; 51 messages</title></rect>
+    <rect x="280" y="346" width="13" height="13" rx="3" fill="#0e4429"><title>2026-09-13 &#8212; 65 messages</title></rect>
   </g>
 
-  <text class="sub" x="24" y="366">Last 17 weeks of activity &#183; regenerated from local transcripts &#183; updated 13 Sep 2026, 00:18</text>
+  <text class="sub" x="24" y="366">Last 17 weeks of activity &#183; regenerated from local transcripts &#183; updated 13 Sep 2026, 00:45</text>
 </svg>

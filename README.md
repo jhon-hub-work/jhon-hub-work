@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://jhonmbuerano.netlify.app"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
+  <a href="https://jhonsportfolio.netlify.app"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
   <a href="https://www.linkedin.com/in/jhon-mycho-buerano"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:bueranojhon@gmail.com"><img src="https://img.shields.io/badge/Email-1a1a1a?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 </p>
@@ -217,7 +217,7 @@ understand the work in under two minutes.
   <img src="https://img.shields.io/badge/Netlify-1a1a1a?style=flat-square&logo=netlify&logoColor=00C7B7" alt="Netlify"/>
 </p>
 
-**[Live site](https://jhonmbuerano.netlify.app)**
+**[Live site](https://jhonsportfolio.netlify.app)**
 
 ---
 
@@ -227,7 +227,7 @@ understand the work in under two minutes.
 | Repository | What it is | Stack |
 |---|---|---|
 | **[ObsidianBrowser](https://github.com/jhon-hub-work/ObsidianBrowser)** | Workspace-first Chromium browser for builders. Local-first, per-workspace session isolation, network-level ad blocking. | Electron · Chromium · Node.js |
-| **[portfolio](https://github.com/jhon-hub-work/portfolio)** · [live](https://jhonmbuerano.netlify.app) | Conversion-first portfolio and long-form Wave3 engineering case study. No framework, no build step, no dependencies. | HTML · CSS · Vanilla JS · Netlify |
+| **[portfolio](https://github.com/jhon-hub-work/portfolio)** · [live](https://jhonsportfolio.netlify.app) | Conversion-first portfolio and long-form Wave3 engineering case study. No framework, no build step, no dependencies. | HTML · CSS · Vanilla JS · Netlify |
 | **[jhon-hub-work](https://github.com/jhon-hub-work/jhon-hub-work)** | This profile README. | Markdown |
 
 **Private:** `salo` (event photo app, live at [saloph.com](https://saloph.com), in beta) and
@@ -274,5 +274,5 @@ isn't finished.
 
 <p align="center">
   <sub>Open to senior full stack, AI automation, and founding engineer roles.</sub><br/>
-  <sub><a href="https://jhonmbuerano.netlify.app">Portfolio</a> · <a href="https://www.linkedin.com/in/jhon-mycho-buerano">LinkedIn</a> · <a href="mailto:bueranojhon@gmail.com">bueranojhon@gmail.com</a></sub>
+  <sub><a href="https://jhonsportfolio.netlify.app">Portfolio</a> · <a href="https://www.linkedin.com/in/jhon-mycho-buerano">LinkedIn</a> · <a href="mailto:bueranojhon@gmail.com">bueranojhon@gmail.com</a></sub>
 </p>

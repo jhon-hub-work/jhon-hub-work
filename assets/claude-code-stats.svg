@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="382" viewBox="0 0 880 382" role="img" aria-label="Claude Code usage: 2331 sessions, 92474 messages, 69.8M tokens, 60 active days, 43 day current streak, top model Opus 5.5">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="382" viewBox="0 0 880 382" role="img" aria-label="Claude Code usage: 2329 sessions, 92268 messages, 69.7M tokens, 60 active days, 43 day current streak, top model Opus 5.5">
   <style>
     .bg   { fill:#161b22; stroke:#30363d; stroke-width:1; }
     .tile { fill:#1c2128; stroke:#30363d; stroke-width:1; }
@@ -19,13 +19,13 @@
   <g>
     <rect class="tile" x="24.5" y="62.5" width="196" height="76" rx="8"/>
     <text class="lbl" x="42" y="88">Sessions</text>
-    <text class="val" x="42" y="120">2,331</text>
+    <text class="val" x="42" y="120">2,329</text>
     <rect class="tile" x="236.5" y="62.5" width="196" height="76" rx="8"/>
     <text class="lbl" x="254" y="88">Messages</text>
-    <text class="val" x="254" y="120">92,474</text>
+    <text class="val" x="254" y="120">92,268</text>
     <rect class="tile" x="448.5" y="62.5" width="196" height="76" rx="8"/>
     <text class="lbl" x="466" y="88">Tokens (in + out)</text>
-    <text class="val" x="466" y="120">69.8M</text>
+    <text class="val" x="466" y="120">69.7M</text>
     <rect class="tile" x="660.5" y="62.5" width="196" height="76" rx="8"/>
     <text class="lbl" x="678" y="88">Active days</text>
     <text class="val" x="678" y="120">60</text>
@@ -131,7 +131,7 @@
     <rect x="216" y="250" width="13" height="13" rx="3" fill="#0e4429"><title>2026-09-21 &#8212; 288 messages</title></rect>
     <rect x="216" y="266" width="13" height="13" rx="3" fill="#0e4429"><title>2026-09-22 &#8212; 614 messages</title></rect>
     <rect x="216" y="282" width="13" height="13" rx="3" fill="#0e4429"><title>2026-09-23 &#8212; 311 messages</title></rect>
-    <rect x="216" y="298" width="13" height="13" rx="3" fill="#0e4429"><title>2026-09-24 &#8212; 1357 messages</title></rect>
+    <rect x="216" y="298" width="13" height="13" rx="3" fill="#0e4429"><title>2026-09-24 &#8212; 1121 messages</title></rect>
     <rect x="216" y="314" width="13" height="13" rx="3" fill="#0e4429"><title>2026-09-25 &#8212; 1227 messages</title></rect>
     <rect x="216" y="330" width="13" height="13" rx="3" fill="#0e4429"><title>2026-09-26 &#8212; 302 messages</title></rect>
     <rect x="216" y="346" width="13" height="13" rx="3" fill="#0e4429"><title>2026-09-27 &#8212; 1814 messages</title></rect>
@@ -161,8 +161,8 @@
     <rect x="280" y="282" width="13" height="13" rx="3" fill="#006d32"><title>2026-10-21 &#8212; 3790 messages</title></rect>
     <rect x="280" y="298" width="13" height="13" rx="3" fill="#0e4429"><title>2026-10-22 &#8212; 1422 messages</title></rect>
     <rect x="280" y="314" width="13" height="13" rx="3" fill="#0e4429"><title>2026-10-23 &#8212; 2418 messages</title></rect>
-    <rect x="280" y="330" width="13" height="13" rx="3" fill="#0e4429"><title>2026-10-24 &#8212; 971 messages</title></rect>
+    <rect x="280" y="330" width="13" height="13" rx="3" fill="#0e4429"><title>2026-10-24 &#8212; 1001 messages</title></rect>
   </g>
 
-  <text class="sub" x="24" y="366">Last 17 weeks of activity &#183; regenerated from local transcripts &#183; updated 24 Oct 2026, 02:33</text>
+  <text class="sub" x="24" y="366">Last 17 weeks of activity &#183; regenerated from local transcripts &#183; updated 24 Oct 2026, 02:34</text>
 </svg>

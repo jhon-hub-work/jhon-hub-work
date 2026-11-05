@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="382" viewBox="0 0 880 382" role="img" aria-label="Claude Code usage: 3443 sessions, 130071 messages, 87.0M tokens, 71 active days, 54 day current streak, top model Opus 5.5">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="382" viewBox="0 0 880 382" role="img" aria-label="Claude Code usage: 3443 sessions, 130172 messages, 87.0M tokens, 71 active days, 54 day current streak, top model Opus 5.5">
   <style>
     .bg   { fill:#161b22; stroke:#30363d; stroke-width:1; }
     .tile { fill:#1c2128; stroke:#30363d; stroke-width:1; }
@@ -22,7 +22,7 @@
     <text class="val" x="42" y="120">3,443</text>
     <rect class="tile" x="236.5" y="62.5" width="196" height="76" rx="8"/>
     <text class="lbl" x="254" y="88">Messages</text>
-    <text class="val" x="254" y="120">130,071</text>
+    <text class="val" x="254" y="120">130,172</text>
     <rect class="tile" x="448.5" y="62.5" width="196" height="76" rx="8"/>
     <text class="lbl" x="466" y="88">Tokens (in + out)</text>
     <text class="val" x="466" y="120">87.0M</text>
@@ -158,8 +158,8 @@
     <rect x="264" y="346" width="13" height="13" rx="3" fill="#006d32"><title>2026-11-01 &#8212; 5046 messages</title></rect>
     <rect x="280" y="250" width="13" height="13" rx="3" fill="#0e4429"><title>2026-11-02 &#8212; 2318 messages</title></rect>
     <rect x="280" y="266" width="13" height="13" rx="3" fill="#0e4429"><title>2026-11-03 &#8212; 2396 messages</title></rect>
-    <rect x="280" y="282" width="13" height="13" rx="3" fill="#0e4429"><title>2026-11-04 &#8212; 1554 messages</title></rect>
+    <rect x="280" y="282" width="13" height="13" rx="3" fill="#0e4429"><title>2026-11-04 &#8212; 1655 messages</title></rect>
   </g>
 
-  <text class="sub" x="24" y="366">Last 17 weeks of activity &#183; regenerated from local transcripts &#183; updated 04 Nov 2026, 19:18</text>
+  <text class="sub" x="24" y="366">Last 17 weeks of activity &#183; regenerated from local transcripts &#183; updated 04 Nov 2026, 19:24</text>
 </svg>
